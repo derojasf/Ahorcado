@@ -15,12 +15,12 @@ public class Terminal {
     Lista revpos=new Lista();
     Lista revl=new Lista();
     int x;
-    
+    char[]guiones;
     
     public void guion(){
         
         x=mostrar.palabras();
-        char[]guiones=new char[x];
+        guiones=new char[x];
         
         for(int i=0;i<x;i++){
             
@@ -28,7 +28,13 @@ public class Terminal {
            System.out.println(guiones[i]);
         }
         
-      int g;
+      
+       
+        
+    }
+   public void juego(){
+     
+       int g;
       char m;
       g=revpos.comparapos();
       m=revl.comparar();
@@ -39,10 +45,7 @@ public class Terminal {
             
            guiones[i]=95;
            System.out.println(guiones[i]);
-       
-        
-    }
-   
   
     } 
+}
 }
